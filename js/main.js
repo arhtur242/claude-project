@@ -3,9 +3,10 @@ import { tasksView } from './tasks.js';
 import { domainsView } from './domains.js';
 import { timeView } from './time.js';
 import { progressView } from './progress.js';
+import { dataView } from './data.js';
 
 // Chaque section expose { id, label, init(root) }.
-const views = [tasksView, timeView, progressView, domainsView];
+const views = [tasksView, timeView, progressView, domainsView, dataView];
 
 const nav = document.getElementById('nav');
 const main = document.getElementById('views');

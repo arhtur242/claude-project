@@ -25,4 +25,9 @@ js/tasks.js      section Tâches
 js/domains.js    section Domaines (couleur, objectif hebdomadaire)
 js/time.js       section Temps (chronomètre + saisie manuelle)
 js/progress.js   section Progression (heures par semaine, objectifs, niveau auto-évalué)
+js/data.js       section Données (export / import JSON)
 ```
+
+## Historique du projet
+
+Chaque fonctionnalité a son commit : `git log --oneline` raconte l'évolution de l'app.

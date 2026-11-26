@@ -65,3 +65,18 @@ button.ghost:hover { color: var(--warn); }
 .meta.flat { margin-left: 0; }
 .goal { display: flex; align-items: center; gap: 6px; font-size: 0.85rem; color: var(--muted); }
 .goal input { width: 4.5rem; }
+
+/* Temps */
+.timer { display: grid; gap: 16px; padding: 20px 0 24px; border-bottom: 1px solid var(--line); margin-bottom: 8px; }
+.clock { font-size: clamp(2.6rem, 9vw, 4.5rem); font-weight: 300; font-variant-numeric: tabular-nums; letter-spacing: -0.03em; line-height: 1; color: var(--muted); }
+.timer.running .clock { color: var(--accent); }
+.timer-fields { display: flex; flex-wrap: wrap; gap: 8px; }
+.timer-fields input { flex: 1 1 180px; }
+.timer-actions { display: flex; gap: 8px; align-items: center; }
+button.big { padding: 12px 22px; font-size: 1.05rem; }
+.section-title { margin: 24px 0 10px; }
+.entry-list { list-style: none; margin: 0; padding: 0; }
+.entry { display: flex; align-items: center; gap: 14px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.entry-date { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 0.85rem; flex: none; }
+.entry .grow { flex: 1; min-width: 0; }
+.muted { color: var(--muted); }

@@ -23,4 +23,5 @@ js/storage.js    état de l'app + sauvegarde localStorage
 js/util.js       petits utilitaires (DOM, dates, durées)
 js/tasks.js      section Tâches
 js/domains.js    section Domaines (couleur, objectif hebdomadaire)
+js/time.js       section Temps (chronomètre + saisie manuelle)
 ```

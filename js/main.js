@@ -1,9 +1,10 @@
 import { h } from './util.js';
 import { tasksView } from './tasks.js';
 import { domainsView } from './domains.js';
+import { timeView } from './time.js';
 
 // Chaque section expose { id, label, init(root) }.
-const views = [tasksView, domainsView];
+const views = [tasksView, timeView, domainsView];
 
 const nav = document.getElementById('nav');
 const main = document.getElementById('views');

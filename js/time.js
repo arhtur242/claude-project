@@ -58,7 +58,7 @@ export const timeView = {
     function fillSelects() {
       const st = getState();
       const domainOptions = () => [h('option', { value: '' }, 'Sans domaine'), st.domains.map((d) => h('option', { value: d.id }, d.name))];
-      const keep = (sel, fill) => { const v = sel.value; sel.replaceChildren(...fill()); sel.value = v; if (sel.value !== v) sel.value = ''; };
+      const keep = (sel, fill) => { const v = sel.value; sel.replaceChildren(...fill().flat()); sel.value = v; if (sel.value !== v) sel.value = ''; };
       keep(dom, domainOptions);
       keep(mDom, domainOptions);
       keep(task, () => [h('option', { value: '' }, 'Sans tâche'), st.tasks.filter((t) => !t.done).map((t) => h('option', { value: t.id }, t.title))]);

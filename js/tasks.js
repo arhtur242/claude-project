@@ -43,7 +43,7 @@ export const tasksView = {
       const current = domain.value;
       domain.replaceChildren(
         h('option', { value: '' }, 'Sans domaine'),
-        getState().domains.map((d) => h('option', { value: d.id }, d.name)));
+        ...getState().domains.map((d) => h('option', { value: d.id }, d.name)));
       domain.value = current;
       if (domain.value !== current) domain.value = '';
     }
